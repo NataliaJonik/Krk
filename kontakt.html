@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Natalia Jonik-Kluczewska Usługi Turystyczne</title>
+    <meta name="keywords" content="guide turism turismo poland polonia">
+    <title>Natalia Jonik-Kluczewska Usługi-Turystyczne</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-      <!-- FontAwesome CSS -->
+    <!-- owl-carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <!-- jquery ui  -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <!-- FontAwesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Flags -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -49,20 +56,19 @@
                                 </div>
                             </div>
                         </div>
-                       <div class=" col-xl-1 col-lg-1 col-md-1 col-sm-1 col-4">
+                        <div class=" col-xl-1 col-lg-1 col-md-1 col-sm-1 col-4">
                             <a href="#" class="search-icon" data-toggle="modal" data-target="#exampleModal">
                            <i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-           
             <!-- header-section-->
-            <div class="header">
+            <div class="header py-4">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-12">
-                            <div class="logo"> <a href="index.html"><img src="" alt=""> </a> </div>
+                            <div class="logo"> <a href="index.html"><img src="#" alt=""> </a> </div>
                         </div>
                         <div class="col-xl-9 col-lg-10 col-md-9 col-sm-12 col-12">
                             <!-- navigations-->
@@ -82,14 +88,15 @@
                                                 <li><a class="dropdown-item" href="Schindler.html">Fabrica de Schindler</a></li>
                                             </ul>
                                         </li>
-                                        <li class="active"><a href="sobreMi.html">Contacto</a></li>
-                                        
+                                        <li class="active"><a href="kontakt.html">Contacto</a></li>
+                                        <li class="nav-item active">
                                         <li class="has-sub"><a href="#">Blog</a>
                                             <ul>
                                                 <li><a href="blog-default.html">Blog Default</a></li>
                                                 <li><a href="blog-single.html">Blog Single</a></li>
                                             </ul>
                                         </li>
+
                                         <li class="nav-item active">
                                             <a class="nav-link dropdown-toggler"href="index.html" id="navbarLg" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Language
                                             </a>
@@ -99,6 +106,7 @@
                                                 <li><a class="dropdown-item" href="Schindler.html"><span class="flag-icon flag-icon-us"> </span>English</a></li>
                                             </ul>
                                         </li>
+                                
                                     </ul>
                                 </div>
                             </div>
@@ -109,46 +117,58 @@
             </div>
         </div>
         <!-- /. header-section-->
-        <!-- page-header -->
+        <!-- slider -->
 
-        <!-- /.page-header-->
-        <!-- blog-section -->
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 offset-md-1 col-md-5 col-sm-12 col-12 mb40">
-                <div class="tour-block">
-                    <div class="tour-content">
-                        <h2 class="mb30"><a href="#" class="title">Fabrica de Oscar Schindler</a></h2>
-                        <p class="mb30">Donec porttitor lorem utdiam iaculis euismod congue eroset lectus consectetur fermen uspendissolutpat risus utarcu dapibusat conquat quam sodenean pretium a metus euauctor.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 offset-md-1 col-md-4 col-sm-12 col-12 mb40">
-                <div class="tour-img">
-                    <a href="" class="imghover"> <img src="./images/wawel.jpeg" alt="" class="img-fluid"></a>
-                </div>
-            </div>
+        <!-- /.slider -->
+        <!-- enguiry-form -->
+
+        <!-- /.enguiry-form -->
+        <!-- contact form -->
+        <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
         </div>
-        <!-- /.blog-section -->
 
+
+ 
         <!-- footer -->
         <div class="footer">
             <div class="container">
                 <div class="row ">
                     <!-- footer-logo -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 ">
-                        <div class="ft-img"><img src="./images/ft_logo.png" alt=""></div>
+                        <div class="ft-img"><img src="./images/logo_transparent .png" alt=""></div>
                     </div>
                     <!-- /.footer-logo -->
                     <!-- footer-links -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
                         <div class="footer-widget ">
-                            <h3 class="footer-title ">Quick Links</h3>
+                            <h3 class="footer-title ">Enlaces rápidos</h3>
                             <ul class="angle list-none">
-                                <li><a href="# ">Home</a></li>
-                                <li><a href="# ">Tour</a></li>
-                                <li><a href="# ">Blog</a></li>
-                                <li><a href="# ">Customer Reviews</a></li>
-                                <li><a href="# ">Contact</a></li>
+                                <li><a href="index.html ">Inicio</a></li>
+                                <li><a href="sobreMi.html ">Sobre mi</a></li>
+                                <li><a href="blog-single.html ">Blog</a></li>
+                                <li><a href="# ">Opiniones</a></li>
+                                <li><a href="# ">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -156,12 +176,11 @@
                     <!-- footer-tours -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
                         <div class="footer-widget ">
-                            <h3 class="footer-title ">Tour Packages</h3>
+                            <h3 class="footer-title ">Excursiónes</h3>
                             <ul class="angle list-none">
-                                <li><a href="# ">International Tour</a>
-                                    <li><a href="# ">Domestic Tour</a></li>
-                                    <li><a href="# ">Adventure Tour</a></li>
-                                    <li><a href="# ">Business Tour</a></li>
+                                <li><a href="caminoReal.html ">Camino Real</a>
+                                    <li><a href="Kazinierz.html ">Kazimierz</a></li>
+                                    <li><a href="Schindler.html ">Fabrica de Schindler</a></li>
                             </ul>
                         </div>
                     </div>
@@ -170,7 +189,6 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
                         <div class="footer-widget">
                             <h3 class="footer-title">Contact Info</h3>
-                            <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-globe"></i></span> <span class="ft-contact-text">Natalia Jonik-Kluczewska Usługi Turystyczne </span></div>
                             <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-map-marker"></i></span> <span class="ft-contact-text">ul.Wiślisko 10/4, 31-538 Kraków </span></div>
                             <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-phone "></i></span> <span class="ft-contact-text">+48 530689934</span></div>
                             <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-envelope "></i></span> <span class="ft-contact-text">nataliajonik@gmail.com</span></div>
@@ -184,8 +202,8 @@
             <div class="tiny-footer ">
                 <div class="container ">
                     <div class="row ">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                             <p>Copyright © All Rights Reserved 2020 Template Design & Development by <a href="https://easetemplate.com/ " target="_blank " class="copyrightlink ">EaseTemplate</a></p>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
+                            <p>Copyright © All Rights Reserved 2020 Template Design & Development by <a href="https://easetemplate.com/ " target="_blank " class="copyrightlink ">EaseTemplate</a></p>
                         </div>
                     </div>
                     <!-- /. tiny-footer -->
@@ -193,7 +211,7 @@
             </div>
         </div>
         <!-- /.footer -->
-            <!-- Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -201,18 +219,17 @@
                         <form>
                             <div class="search-form">
                                 <input type="text" class="form-control" placeholder="Find here">
-                                 <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">close</span>
-                            </button>
+                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">close</span>
+                                </button>
                             </div>
-                           
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-          <!-- /.Modal -->
-           <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+        <!-- /.Modal -->
+        <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -220,8 +237,14 @@
         <script src="js/menumaker.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/sticky-header.js"></script>
-         <script src="js/return-to-top.js"></script>
-      
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/multiple-carousel.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/return-to-top.js"></script>
+    
+
+
     </div>
 </body>
 

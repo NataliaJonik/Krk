@@ -524,8 +524,8 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
    6. Slider / Hero-section
 -------------------------------------*/
 .slider { margin-bottom: -10px; }
-.slider-img { position: center; width: 100%; height: 350px; }
-.slider-img img { position: center; z-index: -1; }
+.slider-img { position: relative; width: 100%; height: 350px; }
+.slider-img img { position: relative; z-index: -1; }
 .slider-captions { position: absolute; bottom: 190px; width: 100%; color: #fff; text-align: left; }
 .slider-title { color: #fff; font-size: 44px; font-weight: 800; line-height: 56px; text-transform: uppercase; margin-bottom: 5px; }
 .slider .owl-theme .owl-nav { line-height: 1; text-align: center; -webkit-tap-highlight-color: transparent; }
@@ -1112,3 +1112,4 @@ margin-bottom: 0; background-color: #fffcf7; border-bottom: 1px solid #e2ded8; p
   .awards-img { float: initial; }
   .wrapper { margin: 0px; }
 }
+

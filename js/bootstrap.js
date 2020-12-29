@@ -3892,3 +3892,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+
+//lenguage selector
+
+$(function(){
+    $('.selectpicker').selectpicker();
+})
