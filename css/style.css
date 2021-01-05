@@ -580,7 +580,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .btn-social-icon { -webkit-font-smoothing: antialiased; font-size: 14px; padding-right: 28px; display: inline-block; width: 0px; height: 0px; line-height: 1; color: #121113; }
 
 /*-------------- tiny footer ------------*/
-.tiny-footer { font-size: 12px; padding: 10px 0px; background-color: #00537F; line-height: 1; }
+.tiny-footer { font-size: 12px; padding: 10px 0px; background-color: #fff; line-height: 1; }
 
 /*--- easetemplate copyright link --*/
 .copyrightlink { color: white; }
