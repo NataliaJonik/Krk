@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="kontact-form">
     <meta name="keywords" content="guide turism turismo poland polonia">
     <title>Natalia Jonik-Kluczewska Usługi-Turystyczne</title>
     <!-- Bootstrap -->
@@ -14,18 +14,22 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
     <!-- owl-carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
+<!--    <link href="css/owl.carousel.css" rel="stylesheet">
+<!--    <link href="css/owl.theme.default.css" rel="stylesheet">
     <!-- jquery ui  -->
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <!-- FontAwesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+<!--    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Flags -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
     <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+
+<!--    <link href="css/style.css" rel="stylesheet">-->
+    <link href="css/styleKontakt.css" rel="stylesheet">
+    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,9 +39,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <!--<div class="wrapper">
         <!-- header-section-->
-        <div class="header-wrapper">
+        <!-- <div class="header-wrapper">
             <div class="top-header">
                 <div class="container">
                     <div class="row">
@@ -64,7 +68,7 @@
                 </div>
             </div>
             <!-- header-section-->
-            <div class="header py-4">
+            <!--<div class="header py-4">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-12">
@@ -72,7 +76,7 @@
                         </div>
                         <div class="col-xl-9 col-lg-10 col-md-9 col-sm-12 col-12">
                             <!-- navigations-->
-                            <div class="navigation">
+                           <!-- <div class="navigation">
                                 <div id="navigation">
                                     <ul>
                                         <li class="active"><a href="index.html">Inicio</a></li>
@@ -111,7 +115,7 @@
                                 </div>
                             </div>
                             <!-- /.navigations-->
-                        </div>
+                      <!--  </div>
                     </div>
                 </div>
             </div>
@@ -124,43 +128,48 @@
 
         <!-- /.enguiry-form -->
         <!-- contact form -->
-        <div class="container">
-          <form action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-          </form>
+        <div class="main-concept" >
+            <div class="container-kontact">
+            <form action="" methode="POST" class="form">
+                <div class="form-group">
+                    <label for="name" class="form-lable">Your Name</lable>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-lable">Your Email</lable>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="jane.doe@doe.com" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-lable">Subject</lable>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello there!" tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-lable">Message</lable>
+                    <textarea rows="5" cols="50" class="form-control" id="message" name="message" placeholder="Enter Message..." tabindex="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Send Message!</button>
+                </div>
+            </form>
         </div>
+    </div>
 
+        
+
+</body>
 
  
         <!-- footer -->
-        <div class="footer">
+     <!--   <div class="footer">
             <div class="container">
                 <div class="row ">
                     <!-- footer-logo -->
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 ">
+                 <!--   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 ">
                         <div class="ft-img"><img src="./images/logo_transparent .png" alt=""></div>
                     </div>
                     <!-- /.footer-logo -->
                     <!-- footer-links -->
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
+            <!--     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
                         <div class="footer-widget ">
                             <h3 class="footer-title ">Enlaces rápidos</h3>
                             <ul class="angle list-none">
@@ -174,7 +183,7 @@
                     </div>
                     <!-- /.footer-links -->
                     <!-- footer-tours -->
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
+                  <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 ">
                         <div class="footer-widget ">
                             <h3 class="footer-title ">Excursiónes</h3>
                             <ul class="angle list-none">
@@ -186,7 +195,7 @@
                     </div>
                     <!-- /.footer-Tours -->
                     <!-- footer-post -->
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+                  <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
                         <div class="footer-widget">
                             <h3 class="footer-title">Contact Info</h3>
                             <div class="ft-contact-info"> <span class="ft-contact-icon"><i class="fa fa-map-marker"></i></span> <span class="ft-contact-text">ul.Wiślisko 10/4, 31-538 Kraków </span></div>
@@ -196,9 +205,9 @@
                         </div>
                     </div>
                     <!-- /.footer-post -->
-                </div>
+               <!-- </div>
                 <!-- tiny-footer -->
-            </div>
+           <!-- </div>
             <div class="tiny-footer ">
                 <div class="container ">
                     <div class="row ">
@@ -207,12 +216,12 @@
                         </div>
                     </div>
                     <!-- /. tiny-footer -->
-                </div>
+               <!-- </div>
             </div>
         </div>
         <!-- /.footer -->
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -242,10 +251,12 @@
         <script src="js/jquery-ui.js"></script>
         <script src="js/date.js"></script>
         <script src="js/return-to-top.js"></script>
+        <script src="js/scriptKontact.js"></script>
     
 
 
     </div>
+
 </body>
 
 </html>
